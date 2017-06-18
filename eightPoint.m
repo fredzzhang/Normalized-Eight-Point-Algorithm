@@ -3,7 +3,7 @@ function[eMatrix] = eightPoint(matchedPoints1, matchedPoints2, K1, K2)
 % Function Introdution:
 % Given a set of correspondences between two images and the intrisic matrix
 % of the calibrated camera for both views, compute the essential matrix
-% associated with the epipolar geometry
+% associated with the epipolar geometry using eight points
 
 % Inputs:
 % matchedPoints1 - the coordinates of matched features in the first image,
@@ -19,7 +19,7 @@ function[eMatrix] = eightPoint(matchedPoints1, matchedPoints2, K1, K2)
 
 % Author: Frederic Zhang
 % Last modified: 15 June 2017
-% Version: 2.0
+% Version: 2.1
 % -------------------------------------------------------------------------
 
 % 8-point algorithm
