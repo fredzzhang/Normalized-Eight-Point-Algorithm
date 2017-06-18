@@ -14,12 +14,11 @@ function[eMatrix] = eightPoint(matchedPoints1, matchedPoints2, K1, K2)
 % K2 - the intrisic matrix of the calibrated camera from the second view
 
 % Outputs:
-% norm_mat - the corresponding normalization matrix for the collection of
-%   points. It's of size 3 x 3
+% eMatrix - the computed essential matrix
 
 % Author: Frederic Zhang
-% Last modified: 15 June 2017
-% Version: 2.1
+% Last modified: 18 June 2017
+% Version: 2.2
 % -------------------------------------------------------------------------
 
 % 8-point algorithm
