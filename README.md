@@ -21,4 +21,4 @@ Test of normalized 8-point algorithm in MATLAB
 ### test_epilines
 Test of normalized 8-point algorithm on images from KITTI sequence. Epipolar lines of the given image pair will be overlayed onto the images. Below is an example.
 
-<img src="images/example1.png" width="413" height="135" align="middle"><img src="images/example2.png" width="413" height="135" align="middle">
+<img src="images/example1.png" width="413" height="150" align="middle"><img src="images/example2.png" width="413" height="150" align="middle">
