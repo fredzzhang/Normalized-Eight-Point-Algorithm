@@ -5,12 +5,15 @@
 ### eightPoint.m
 Normalized 8-point algorithm implemented in MATLAB
 
-	Usage: F = eightPoint(p, q, K1, K2)
+	Usage: E = eightPoint(p, q, K1, K2)
 		where:
+			E - essential matrix between the image pair
 			p - coordinates of matched points in the first image
 			q - coordinates of matched points in the second image
 			K1 - intrinsic matrix of the camera corresponding to the first view
 			K2 - intrinsic matrix for the second view
+			
+Note: To compute fundamental matrix, initialize the intrinsic matrix as an identity 3x3 matrix
 	  
 ### test_synth
 Test of normalized 8-point algorithm in MATLAB
