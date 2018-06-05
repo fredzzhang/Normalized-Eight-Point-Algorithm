@@ -47,7 +47,7 @@ title('Matched features between the image pair');
 p = matchedPoints1.Location;
 q = matchedPoints2.Location;
 
-% % Compute fundamental matrix
+% Compute fundamental matrix
 E = eightPoint(p, q, K, K);
 F = K' \ E / K;
 F = F / F(3, 3);
