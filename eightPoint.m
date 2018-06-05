@@ -17,8 +17,8 @@ function[eMatrix] = eightPoint(matchedPoints1, matchedPoints2, K1, K2)
 % eMatrix - the computed essential matrix
 
 % Author: Frederic Zhang
-% Last modified: 18 June 2017
-% Version: 2.2
+% Last modified: 5 Jun. 2018
+% Version: 3.0
 % -------------------------------------------------------------------------
 
 % 8-point algorithm
@@ -36,8 +36,8 @@ end
 % Arrange data
 p1 = transpose([matchedPoints1(1: 8, :), ones(8, 1)]);
 p2 = transpose([matchedPoints2(1: 8, :), ones(8, 1)]);
-norm1 = getNormalizationMatrix(p1);
-norm2 = getNormalizationMatrix(p2);
+norm1 = getNormMat2d(p1);
+norm2 = getNormMat2d(p2);
 
 % Normalisation
 p1 = norm1 * p1;
