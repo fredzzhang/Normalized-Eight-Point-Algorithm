@@ -1,10 +1,7 @@
-close all;
-clear;
-clc;
 % -------------------------------------------------------------------------
 % Program Introdution:
 % This program is a benchmark simulation to verify the 8-point algorithm.
-
+% 
 % Prgram flow
 % Fix the first camera at the origin and randomly generate a relative pose
 % for the second camera. Both cameras are assumed as calibrated, where the 
@@ -12,7 +9,7 @@ clc;
 % in space and project them onto both cameras to obtain matched points in
 % two views. 8-point algorithm is then carried out to compute the essential
 % matrix and the result is justified.
-
+% 
 % Key variables
 % thetad - rotation angle in degrees
 % theta - rotation angle in radians
@@ -26,12 +23,14 @@ clc;
 % x2 - coordinates of matched features in the second view
 % eMatrix - the ground truth of essential matrix
 % eMatrix8 - the essential matrix computed using 8-point algorithm
-
+% 
 % Author: Frederic Zhang
 % Last modified: 15 June 2017
 % Version: 2.0
 % -------------------------------------------------------------------------
-
+close all;
+clear;
+clc;
 
 % Intrinsic matrix
 K = eye(3);
@@ -77,11 +76,11 @@ x2 = p2 * X;
 x1 = x1 ./ repmat(x1(3, :), [3, 1]);
 x2 = x2 ./ repmat(x2(3, :), [3, 1]);
 
-x1 = x1(1:2, :);
-x2 = x2(1:2, :);
+x1 = transpose(x1(1:2, :));
+x2 = transpose(x2(1:2, :));
 
 % Compute essential matrix using 8-point algorithm
-eMatrix8 = eightPoint(x1', x2', K, K);
+eMatrix8 = eightPoint(x1, x2, K, K);
 eMatrix8 = eMatrix8 / eMatrix8(3, 3);
 
 % Varification
