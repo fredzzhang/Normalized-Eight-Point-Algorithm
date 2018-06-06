@@ -25,4 +25,5 @@ Test of normalized 8-point algorithm on images from KITTI sequence. Epipolar lin
 
 ## Reference
 
-	[1] R. Hartley, "In defense of the eight-point algorithm", IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 19, no. 6, pp. 580-593, 1997.
+	[1] R. Hartley, "In defense of the eight-point algorithm", IEEE Transactions on Pattern Analysis and 
+	Machine Intelligence, vol. 19, no. 6, pp. 580-593, 1997.
