@@ -1,10 +1,9 @@
 function[eMatrix] = eightPoint(matchedPoints1, matchedPoints2, K1, K2)
-% -------------------------------------------------------------------------
 % Function Introdution:
 % Given a set of correspondences between two images and the intrisic matrix
 % of the calibrated camera for both views, compute the essential matrix
 % associated with the epipolar geometry using eight points
-
+%
 % Inputs:
 % matchedPoints1 - the coordinates of matched features in the first image,
 %   expressed in inhomogeneous coordinate. The size is of Nx2, where N is the
@@ -12,14 +11,13 @@ function[eMatrix] = eightPoint(matchedPoints1, matchedPoints2, K1, K2)
 % matchedPoints2 - same as above
 % K1 - the intrisic matrix of the calibrated camera from the first view
 % K2 - the intrisic matrix of the calibrated camera from the second view
-
+%
 % Outputs:
 % eMatrix - the computed essential matrix
-
+%
 % Author: Frederic Zhang
 % Last modified: 5 Jun. 2018
 % Version: 3.0
-% -------------------------------------------------------------------------
 
 % 8-point algorithm
 
